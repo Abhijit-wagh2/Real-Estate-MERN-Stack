@@ -12,3 +12,8 @@
 3. `git commit -m "install react js and tailwind and create first template"`
 4. `git remote add origin https://github.com/abhijit2712/Real-Estate-MERN-Stack.git`
 5. `git branch -M main``git push -u origin main`.
+
+
+##React commands
+1. `npm i react-router-dom`.
+2. 
