@@ -8,7 +8,7 @@ This project is a full-stack real estate application built using the MEAN stack.
 
 ## Installation
 1. Clone the repository: `git clone <repository_url>`
-2. Navigate to the project directory: `cd mean-real-estate`
+2. Navigate to the project directory: `cd mearn-real-estate`
 3. Install dependencies: `npm install`
 4. Set up environment variables: Create a `.env` file and add required variables.
 5. Start the server: `npm start`
