@@ -8,9 +8,7 @@
 
 ## Commands to add project to github
 1. `git init`.
-2. `git add .`.
-3.`git commit -m "install react js and tailwind and create f
-irst template"`
-:`git remote add origin https://github.com/abhijit2712/Real-Estate-MERN-Stack.git`.
-5.:`git branch -M main`.
-6.:`git push -u origin main`.
+2. `git add .`
+3. `git commit -m "install react js and tailwind and create first template"`
+4. `git remote add origin https://github.com/abhijit2712/Real-Estate-MERN-Stack.git`
+5. `git branch -M main``git push -u origin main`.
