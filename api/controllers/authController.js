@@ -4,7 +4,7 @@ import { errorHandler } from "../utils/error.js";
 import { authMiddelwares } from "../middlerwares/authMiddlerware.js";
 
 
-export const signup = async(req, res) =>{
+export const signup = async(req, res,next) =>{
     //console.log(req.body);
     const{username, email, password} = req.body;
 
@@ -18,10 +18,11 @@ export const signup = async(req, res) =>{
         await newUser.save();//this funtion takes to so use await
         res.status(201).json("User created successfully!!!")
     }catch(error){
-        res.status(500).send({
-            success : false,
-            message : "Error in Registration",
-            error,
-        })
+        // res.status(500).send({
+        //     success : false,
+        //     message : "Error in Registration",
+        //     error,
+        // })
+        next(error);
     }
 }
