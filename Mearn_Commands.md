@@ -17,3 +17,10 @@
 ##React commands
 1. `npm i react-router-dom`.
 2. `npm i react-icons`
+
+
+##Backend commands:
+1. `npm i react-router-dom`.
+2. `npm i react-icons``.
+2. `npm i react-icons`
+
