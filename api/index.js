@@ -4,6 +4,7 @@ import connectDB from "./config/db.js";
 import dotenv from 'dotenv';
 import userRouter from './routes/userRoute.js';
 import authRouter from './routes/authRoute.js';
+import { authMiddelwares } from './middlerwares/authMiddlerware.js';
 
 //configure env
 dotenv.config();
@@ -19,3 +20,4 @@ app.use(express.json());
 
 app.use("/api/user" ,userRouter);
 app.use("/api/auth", authRouter);
+

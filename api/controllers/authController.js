@@ -1,5 +1,7 @@
 import User from "../models/userModel.js"
 import bcrypt from "bcrypt";
+import { errorHandler } from "../utils/error.js";
+import { authMiddelwares } from "../middlerwares/authMiddlerware.js";
 
 
 export const signup = async(req, res) =>{
@@ -15,9 +17,11 @@ export const signup = async(req, res) =>{
         //saviing to database
         await newUser.save();//this funtion takes to so use await
         res.status(201).json("User created successfully!!!")
-
     }catch(error){
-        res.status(500).json(error.message);
+        res.status(500).send({
+            success : false,
+            message : "Error in Registration",
+            error,
+        })
     }
-   
 }
